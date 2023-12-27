@@ -130,6 +130,7 @@ TW_NO_FLASH_CURRENT_TWRP := true # For A/B devices that has dedicated recovery, 
 TW_EXCLUDE_DEFAULT_USB_INIT := true
 TW_HAS_MTP := true
 TW_FORCE_KEYMASTER_VER := true
+OF_DEFAULT_KEYMASTER_VERSION := 4.1
 TW_Y_OFFSET := 60
 TW_H_OFFSET := -60
 TW_FRAMERATE := 60
