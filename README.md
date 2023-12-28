@@ -1,5 +1,5 @@
 # OrangeFox Custom Recovery Tree
-![cap_sprout](https://xiaomitools.com/wp-content/uploads/2020/04/of_forums_header_v2_hed_2-1024x432.jpg)
+![cap_sprout](https://xiaomitools.com/wp-content/uploads/2020/04/of_forums_header_v2_hed_2-1024x432.jpg](https://wiki.orangefox.tech/banner.svg)
 
 Buils your own OrangeFox custom recovery for Nokia 5.3 (CAP_sprout).
 
