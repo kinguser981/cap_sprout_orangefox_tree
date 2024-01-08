@@ -64,6 +64,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
  export OF_ADVANCED_SECURITY=1
  export OF_DONT_PATCH_ENCRYPTED_DEVICE=1
  export OF_AB_DEVICE_WITH_RECOVERY_PARTITION=1
+ export OF_NO_RELOAD_AFTER_DECRYPTION=1
 
  # Screen settings
  ##export OF_SCREEN_H="1600"
@@ -73,7 +74,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
  export OF_ALLOW_DISABLE_NAVBAR=1
  export OF_NO_SPLASH_CHANGE=0
 
- ## OF_NO_RELOAD_AFTER_DECRYPTION=1
+ 
 
  # Maximum permissible splash image size (in kilobytes); do *NOT* increase!
  export OF_SPLASH_MAX_SIZE=130
@@ -81,7 +82,6 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
  # use system (ROM) fingerprint where available
  export OF_USE_SYSTEM_FINGERPRINT="1"
 
- ## export OF_DONT_PATCH_ENCRYPTED_DEVICE="1"
  # Debugging
  ## export FOX_RESET_SETTINGS=0
  ## export FOX_INSTALLER_DEBUG_MODE=1
@@ -98,7 +98,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 export OF_MAINTAINER_AVATAR="device/nokia/cap_sprout/pfp.png"
 
 
- # Let's see what are our build VARs
+ # Let's see our build VARs ZZZ
  if [ -n "$FOX_BUILD_LOG_FILE" -a -f "$FOX_BUILD_LOG_FILE" ]; then
   export | grep "FOX" >> $FOX_BUILD_LOG_FILE
   export | grep "OF_" >> $FOX_BUILD_LOG_FILE
