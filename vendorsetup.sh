@@ -52,7 +52,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
  # Version & Variant
  export FOX_VERSION="R11.1"
  export FOX_VARIANT="A14"
- export FOX_BUILD_TYPE="stable"
+ export FOX_BUILD_TYPE="Stable"
 
  # Custom ROMs
  export FOX_AB_DEVICE=1
@@ -73,7 +73,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
  export OF_STATUS_INDENT_RIGHT=40
  export OF_HIDE_NOTCH=1
  ##export OF_CLOCK_POS=1 # Left & Right
- export OF_ALLOW_DISABLE_NAVBAR=1
+ ##export OF_ALLOW_DISABLE_NAVBAR=1
  ##export OF_NO_SPLASH_CHANGE=0
 
  
@@ -85,8 +85,8 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
  export OF_USE_SYSTEM_FINGERPRINT="1"
 
  # Debugging
- ## export FOX_RESET_SETTINGS=0
- ## export FOX_INSTALLER_DEBUG_MODE=1
+ ##export FOX_RESET_SETTINGS=0
+ ##export FOX_INSTALLER_DEBUG_MODE=1
 
  # Other..
  export TW_DEFAULT_LANGUAGE="en"
@@ -94,10 +94,10 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
  export OF_MAINTAINER="Samuel Kendall"
 
 # run a process after formatting data to work-around MTP issues
-## export OF_RUN_POST_FORMAT_PROCESS=1
+##export OF_RUN_POST_FORMAT_PROCESS=1
 
 # Custom pic for maintainer's about section info
-export OF_MAINTAINER_AVATAR="device/nokia/cap_sprout/pfp.png"
+export OF_MAINTAINER_AVATAR="/device/nokia/cap_sprout/pfp.png"
 
 
  # Let's see our build VARs ZZZ
