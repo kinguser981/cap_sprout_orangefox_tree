@@ -71,15 +71,13 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
  ##export OF_STATUS_H="80"
  export OF_STATUS_INDENT_LEFT=40
  export OF_STATUS_INDENT_RIGHT=40
- export OF_HIDE_NOTCH=1
+ ##export OF_HIDE_NOTCH=1
  ##export OF_CLOCK_POS=1 # Left & Right
- ##export OF_ALLOW_DISABLE_NAVBAR=1
- ##export OF_NO_SPLASH_CHANGE=0
 
  
 
  # Maximum permissible splash image size (in kilobytes); do *NOT* increase!
- export OF_SPLASH_MAX_SIZE=130
+ ##export OF_SPLASH_MAX_SIZE=130
 
  # use system (ROM) fingerprint where available
  export OF_USE_SYSTEM_FINGERPRINT="1"
@@ -98,7 +96,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 
 # Custom pic for maintainers about section info
 # Image should be 32 bit PNG 192 x 192 px - Size of image should be as small as possible 50kb
-export OF_MAINTAINER_AVATAR="/device/nokia/cap_sprout/avatar.png"
+export OF_MAINTAINER_AVATAR="/device/nokia/cap_sprout/avatar32bit.png"
 export OF_MAINTAINER="Samuel Kendall"
 
 
