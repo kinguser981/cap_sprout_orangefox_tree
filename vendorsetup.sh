@@ -50,7 +50,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
  export OF_ENABLE_LPTOOLS=1
 
  # Version & Variant
- export FOX_VERSION="R12.1"
+ export FOX_VERSION="R11.1"
  export FOX_VARIANT="A14"
  export FOX_BUILD_TYPE="stable"
 
