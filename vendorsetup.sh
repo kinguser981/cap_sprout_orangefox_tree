@@ -71,10 +71,10 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
  ##export OF_STATUS_H="80"
  export OF_STATUS_INDENT_LEFT=40
  export OF_STATUS_INDENT_RIGHT=40
- ##export OF_HIDE_NOTCH=1
+ export OF_HIDE_NOTCH=1
  ##export OF_CLOCK_POS=1 # Left & Right
  export OF_ALLOW_DISABLE_NAVBAR=1
- export OF_NO_SPLASH_CHANGE=0
+ ##export OF_NO_SPLASH_CHANGE=0
 
  
 
