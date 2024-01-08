@@ -64,7 +64,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
  export OF_ADVANCED_SECURITY=1
  export OF_DONT_PATCH_ENCRYPTED_DEVICE=1
  export OF_AB_DEVICE_WITH_RECOVERY_PARTITION=1
- export OF_NO_RELOAD_AFTER_DECRYPTION=1
+ ##export OF_NO_RELOAD_AFTER_DECRYPTION=1
 
  # Screen settings
  export OF_SCREEN_H="2400"
@@ -77,7 +77,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
  
 
  # Maximum permissible splash image size (in kilobytes); do *NOT* increase!
- ##export OF_SPLASH_MAX_SIZE=130
+ 
 
  # use system (ROM) fingerprint where available
  export OF_USE_SYSTEM_FINGERPRINT="1"
