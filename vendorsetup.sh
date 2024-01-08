@@ -91,13 +91,15 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
  # Other..
  export TW_DEFAULT_LANGUAGE="en"
  export LC_ALL="C"
- export OF_MAINTAINER="Samuel Kendall"
+ 
 
 # run a process after formatting data to work-around MTP issues
 ##export OF_RUN_POST_FORMAT_PROCESS=1
 
-# Custom pic for maintainer's about section info
-export OF_MAINTAINER_AVATAR="/device/nokia/cap_sprout/pfp.png"
+# Custom pic for maintainers about section info
+# Image should be 32 bit PNG 192 x 192 px - Size of image should be as small as possible 50kb
+export OF_MAINTAINER_AVATAR="/device/nokia/cap_sprout/avatar.png"
+export OF_MAINTAINER="Samuel Kendall"
 
 
  # Let's see our build VARs ZZZ
