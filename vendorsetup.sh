@@ -64,6 +64,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
  export FOX_ADVANCED_SECURITY=1
 
  # Screen settings
+ export OF_SCREEN_H=1600
  export OF_ALLOW_DISABLE_NAVBAR=0
  ## export OF_NO_SPLASH_CHANGE=1
 
