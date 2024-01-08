@@ -91,7 +91,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 ## export OF_RUN_POST_FORMAT_PROCESS=1
 
 # Custom pic for maintainer's about section info
-export OF_MAINTAINER_AVATAR="$PWD/device/nokia/cap_sprout/maintainer.png"
+export OF_MAINTAINER_AVATAR="/device/nokia/cap_sprout/pfp.png"
 
 
  # Let's see what are our build VARs
