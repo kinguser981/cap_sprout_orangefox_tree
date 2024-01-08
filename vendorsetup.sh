@@ -62,6 +62,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 
  # Security (Disables MTP&ADB during password prompt)
  export OF_ADVANCED_SECURITY=1
+ export OF_DONT_PATCH_ENCRYPTED_DEVICE=1
  export OF_AB_DEVICE_WITH_RECOVERY_PARTITION=1
 
  # Screen settings
