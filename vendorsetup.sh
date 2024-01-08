@@ -1,5 +1,5 @@
-#	  This file is part of the OrangeFox Recovery Project
-# 	Copyright (C) 2021-2024 The OrangeFox Recovery Project
+#	 This file is part of the OrangeFox Recovery Project
+# 	 Copyright (C) 2021-2024 The OrangeFox Recovery Project
 #   Copyright (C) 2024 The Android Open Source Project
 #
 #	OrangeFox is free software: you can redistribute it and/or modify
