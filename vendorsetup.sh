@@ -67,7 +67,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
  export OF_NO_RELOAD_AFTER_DECRYPTION=1
 
  # Screen settings
- ##export OF_SCREEN_H="1600"
+ export OF_SCREEN_H="2400"
  ##export OF_STATUS_H="80"
  export OF_STATUS_INDENT_LEFT=40
  export OF_STATUS_INDENT_RIGHT=40
