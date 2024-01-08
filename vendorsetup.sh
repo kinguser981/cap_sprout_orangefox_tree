@@ -62,12 +62,13 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 
  # Security (Disables MTP&ADB during password prompt)
  export OF_ADVANCED_SECURITY=1
+ export OF_AB_DEVICE_WITH_RECOVERY_PARTITION=1
 
  # Screen settings
- export OF_SCREEN_H="1600"
- export OF_STATUS_H="80"
- export OF_ALLOW_DISABLE_NAVBAR=0
- ## export OF_NO_SPLASH_CHANGE=1
+ ##export OF_SCREEN_H="1600"
+ ##export OF_STATUS_H="80"
+ export OF_ALLOW_DISABLE_NAVBAR=1
+ export OF_NO_SPLASH_CHANGE=0
 
  ## OF_NO_RELOAD_AFTER_DECRYPTION=1
 
@@ -91,7 +92,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 ## export OF_RUN_POST_FORMAT_PROCESS=1
 
 # Custom pic for maintainer's about section info
-export OF_MAINTAINER_AVATAR="/device/nokia/cap_sprout/pfp.png"
+export OF_MAINTAINER_AVATAR="device/nokia/cap_sprout/pfp.png"
 
 
  # Let's see what are our build VARs
