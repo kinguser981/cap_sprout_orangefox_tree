@@ -55,9 +55,9 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
  export FOX_BUILD_TYPE="official"
 
  # Custom ROMs
- ## export OF_VIRTUAL_AB_DEVICE=1
  export FOX_AB_DEVICE=1
  export OF_USE_GREEN_LED=1
+ export OF_CLASSIC_LEDS_FUNCTION=1
 
 
  # Security (Disables MTP&ADB during password prompt)
@@ -65,9 +65,11 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 
  # Screen settings
  export OF_SCREEN_H=1600
+ export OF_STATUS_H="80"
  export OF_ALLOW_DISABLE_NAVBAR=0
  ## export OF_NO_SPLASH_CHANGE=1
 
+ ## OF_NO_RELOAD_AFTER_DECRYPTION=1
 
  # Maximum permissible splash image size (in kilobytes); do *NOT* increase!
  export OF_SPLASH_MAX_SIZE=130
