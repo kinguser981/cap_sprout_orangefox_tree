@@ -56,7 +56,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 
  # Custom ROMs
  ## export OF_VIRTUAL_AB_DEVICE=1
- export OF_AB_DEVICE=1
+ export FOX_AB_DEVICE=1
  export OF_USE_GREEN_LED=1
 
 
@@ -71,6 +71,10 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
  # Maximum permissible splash image size (in kilobytes); do *NOT* increase!
  export OF_SPLASH_MAX_SIZE=130
 
+ # use system (ROM) fingerprint where available
+ export OF_USE_SYSTEM_FINGERPRINT="1"
+
+ ## export OF_DONT_PATCH_ENCRYPTED_DEVICE="1"
  # Debugging
  ## export FOX_RESET_SETTINGS=0
  ## export FOX_INSTALLER_DEBUG_MODE=1
@@ -78,6 +82,14 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
  # Other..
  export TW_DEFAULT_LANGUAGE="en"
  export LC_ALL="C"
+ export OF_MAINTAINER="Samuel Kendall"
+
+# run a process after formatting data to work-around MTP issues
+## export OF_RUN_POST_FORMAT_PROCESS=1
+
+# Custom pic for maintainer's about section info
+export OF_MAINTAINER_AVATAR="$PWD/device/nokia/cap_sprout/maintainer.png"
+
 
  # Let's see what are our build VARs
  if [ -n "$FOX_BUILD_LOG_FILE" -a -f "$FOX_BUILD_LOG_FILE" ]; then
