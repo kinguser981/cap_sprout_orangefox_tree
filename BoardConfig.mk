@@ -13,6 +13,7 @@ ALLOW_MISSING_DEPENDENCIES := true
 # A/B
 AB_OTA_UPDATER := true
 AB_OTA_PARTITIONS += \
+    boot \
     system \
     system_ext \
     product \
@@ -35,8 +36,8 @@ TARGET_2ND_CPU_VARIANT := generic
 TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a9
 
 # APEX
-DEXPREOPT_GENERATE_APEX_IMAGE := true
-#TW_EXCLUDE_APEX := true
+#DEXPREOPT_GENERATE_APEX_IMAGE := true
+TW_EXCLUDE_APEX := true
 
 # Bootloader
 TARGET_NO_BOOTLOADER := true
@@ -136,6 +137,10 @@ TW_MAX_BRIGHTNESS := 255
 #TW_Y_OFFSET := 60
 #TW_H_OFFSET := -60
 TW_FRAMERATE := 60
+
+ENABLE_CPUSETS := true
+ENABLE_SCHEDBOOST := true
+TARGET_USES_UEFI := true
 
 # Maintainer/Version
 include $(DEVICE_PATH)/version.mk
