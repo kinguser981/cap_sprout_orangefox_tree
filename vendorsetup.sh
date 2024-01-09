@@ -37,7 +37,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 
  # Fox-specific flags
  export FOX_ENABLE_APP_MANAGER=1
- export OF_QUICK_BACKUP_LIST="/boot;/data;"
+ export OF_QUICK_BACKUP_LIST="/boot;/data;/super;"
  export OF_NO_TREBLE_COMPATIBILITY_CHECK=1
 
  # Binaries & Tools
@@ -48,6 +48,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
  export FOX_USE_SED_BINARY=1
  export FOX_USE_XZ_UTILS=1
  export OF_ENABLE_LPTOOLS=1
+ export FOX_REPLACE_BUSYBOX_PS=1
 
  # Version & Variant
  export FOX_VERSION="R11.1"
@@ -56,15 +57,15 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 
  # Custom ROMs
  export FOX_AB_DEVICE=1
- export OF_USE_GREEN_LED=1
- export OF_CLASSIC_LEDS_FUNCTION=1
+ ##export OF_USE_GREEN_LED=1
+ ##export OF_CLASSIC_LEDS_FUNCTION=1
 
 
  # Security (Disables MTP&ADB during password prompt)
  export OF_ADVANCED_SECURITY=1
  export OF_DONT_PATCH_ENCRYPTED_DEVICE=1
  export OF_AB_DEVICE_WITH_RECOVERY_PARTITION=1
- ##export OF_NO_RELOAD_AFTER_DECRYPTION=1
+ export OF_NO_RELOAD_AFTER_DECRYPTION=1
 
  # Screen settings
  export OF_SCREEN_H="2400"
@@ -73,14 +74,14 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
  export OF_STATUS_INDENT_RIGHT=40
  ##export OF_HIDE_NOTCH=1
  ##export OF_CLOCK_POS=1 # Left & Right
-
+ export OF_ALLOW_DISABLE_NAVBAR=0
  
 
  # Maximum permissible splash image size (in kilobytes); do *NOT* increase!
- 
+ export OF_SPLASH_MAX_SIZE=130
 
  # use system (ROM) fingerprint where available
- export OF_USE_SYSTEM_FINGERPRINT="1"
+ ##export OF_USE_SYSTEM_FINGERPRINT="1"
 
  # Debugging
  ##export FOX_RESET_SETTINGS=0
@@ -96,7 +97,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 
 # Custom pic for maintainers about section info
 # Image should be 32 bit PNG 192 x 192 px - Size of image should be as small as possible 50kb
-export OF_MAINTAINER_AVATAR="/device/nokia/cap_sprout/author.png"
+export OF_MAINTAINER_AVATAR="$PWD/device/nokia/cap_sprout/author.png"
 export OF_MAINTAINER="Samuel Kendall"
 
 
