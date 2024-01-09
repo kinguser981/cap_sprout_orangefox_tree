@@ -96,7 +96,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 
 # Custom pic for maintainers about section info
 # Image should be 32 bit PNG 192 x 192 px - Size of image should be as small as possible 50kb
-export OF_MAINTAINER_AVATAR="/device/nokia/cap_sprout/vega.png"
+export OF_MAINTAINER_AVATAR="/device/nokia/cap_sprout/author.png"
 export OF_MAINTAINER="Samuel Kendall"
 
 
