@@ -138,9 +138,9 @@ TW_MAX_BRIGHTNESS := 255
 #TW_H_OFFSET := -60
 TW_FRAMERATE := 60
 
-ENABLE_CPUSETS := true
-ENABLE_SCHEDBOOST := true
-TARGET_USES_UEFI := true
+#ENABLE_CPUSETS := true
+#ENABLE_SCHEDBOOST := true
+#TARGET_USES_UEFI := true
 
 # Maintainer/Version
 include $(DEVICE_PATH)/version.mk
