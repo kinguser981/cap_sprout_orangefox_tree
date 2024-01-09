@@ -35,37 +35,6 @@ fi
 
 if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 
- # Fox-specific flags
- export FOX_ENABLE_APP_MANAGER=1
- export OF_QUICK_BACKUP_LIST="/boot;/data;/super;"
- export OF_NO_TREBLE_COMPATIBILITY_CHECK=1
-
- # Binaries & Tools
- export FOX_USE_BASH_SHELL=1
- export FOX_ASH_IS_BASH=1
- export FOX_USE_NANO_EDITOR=1
- export FOX_USE_TAR_BINARY=1
- export FOX_USE_SED_BINARY=1
- export FOX_USE_XZ_UTILS=1
- export OF_ENABLE_LPTOOLS=1
- export FOX_REPLACE_BUSYBOX_PS=1
-
- # Version & Variant
- export FOX_VERSION="R11.1"
- export FOX_VARIANT="A14"
- export FOX_BUILD_TYPE="Stable"
-
- # Custom ROMs
- export FOX_AB_DEVICE=1
- ##export OF_USE_GREEN_LED=1
- ##export OF_CLASSIC_LEDS_FUNCTION=1
-
-
- # Security (Disables MTP&ADB during password prompt)
- export OF_ADVANCED_SECURITY=1
- export OF_DONT_PATCH_ENCRYPTED_DEVICE=1
- export OF_AB_DEVICE_WITH_RECOVERY_PARTITION=1
- export OF_NO_RELOAD_AFTER_DECRYPTION=1
 
  # Screen settings
  export OF_SCREEN_H="2400"
