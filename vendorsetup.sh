@@ -55,7 +55,11 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
  export FOX_VARIANT="A14"
  export FOX_BUILD_TYPE="Stable"
 
-
+ # Security (Disables MTP&ADB during password prompt)
+ export OF_ADVANCED_SECURITY=1
+ export OF_DONT_PATCH_ENCRYPTED_DEVICE=1
+ export OF_AB_DEVICE_WITH_RECOVERY_PARTITION=1
+ export OF_NO_RELOAD_AFTER_DECRYPTION=1
  
  # Screen settings
  export OF_SCREEN_H="2400"
