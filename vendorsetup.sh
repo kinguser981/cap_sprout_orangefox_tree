@@ -36,6 +36,7 @@ fi
 if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 
  # Fox-specific flags
+ export FOX_RECOVERY_INSTALL_PARTITION="/dev/block/bootdevice/by-name/recovery_a"
  export OF_QUICK_BACKUP_LIST="/boot;/data;/super;"
  
  # OrangeFox Addons
@@ -60,7 +61,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
  # A/B partitioning
  export FOX_AB_DEVICE=1
  ##export FOX_VIRTUAL_AB_DEVICE=1
- export OF_AB_DEVICE_WITH_RECOVERY_PARTITION=1
+ ##export OF_AB_DEVICE_WITH_RECOVERY_PARTITION=1
 
  # Flashlight & LEDs
  export OF_USE_GREEN_LED=1
