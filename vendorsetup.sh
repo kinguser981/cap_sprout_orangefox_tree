@@ -36,8 +36,10 @@ fi
 if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 
  # Fox-specific flags
- export FOX_ENABLE_APP_MANAGER=1
  export OF_QUICK_BACKUP_LIST="/boot;/data;/super;"
+ 
+ # OrangeFox Addons
+ export FOX_ENABLE_APP_MANAGER=1
  export OF_NO_TREBLE_COMPATIBILITY_CHECK=1
 
  # Binaries & Tools
@@ -55,17 +57,22 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
  export FOX_VARIANT="A14"
  export FOX_BUILD_TYPE="Stable"
 
- # Custom ROMs
+ # A/B partitioning
  export FOX_AB_DEVICE=1
+ ##export FOX_VIRTUAL_AB_DEVICE=1
+ ##export OF_AB_DEVICE_WITH_RECOVERY_PARTITION=1
+
+ # Flashlight & LEDs
  export OF_USE_GREEN_LED=1
  export OF_CLASSIC_LEDS_FUNCTION=1
-
+ 
+ # Store settings at /data/recovery instead of internal storage
+ ##export FOX_USE_DATA_RECOVERY_FOR_SETTINGS=1
 
 
  # Security (Disables MTP&ADB during password prompt)
  export OF_ADVANCED_SECURITY=1
  export OF_DONT_PATCH_ENCRYPTED_DEVICE=1
- ##export OF_AB_DEVICE_WITH_RECOVERY_PARTITION=1
  export OF_NO_RELOAD_AFTER_DECRYPTION=1
  
  # Screen settings
@@ -77,7 +84,6 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
  ##export OF_CLOCK_POS=1 # Left & Right
  export OF_ALLOW_DISABLE_NAVBAR=0
  
-
  # Maximum permissible splash image size (in kilobytes); do *NOT* increase!
  export OF_SPLASH_MAX_SIZE=130
 
