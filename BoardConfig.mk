@@ -138,6 +138,9 @@ TW_MAX_BRIGHTNESS := 255
 #TW_H_OFFSET := -60
 TW_FRAMERATE := 60
 
+# Partitions (listed in the file) to be wiped under recovery.
+TARGET_RECOVERY_WIPE := $(DEVICE_PATH)/recovery.wipe
+
 #ENABLE_CPUSETS := true
 #ENABLE_SCHEDBOOST := true
 #TARGET_USES_UEFI := true
