@@ -6,6 +6,7 @@
 #
 
 PRODUCT_RELEASE_NAME := cap_sprout
+DEVICE_PATH := device/nokia/cap_sprout
 
 # Inherit any OrangeFox-specific settings
 $(call inherit-product-if-exists, $(DEVICE_PATH)/fox_$(PRODUCT_RELEASE_NAME).mk)
